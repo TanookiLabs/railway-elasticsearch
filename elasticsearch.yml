@@ -3,7 +3,6 @@ discovery.type: "single-node"
 node.name: "elasticsearch"
 path.data: "/esdata"
 xpack.security.enabled: "true"
-xpack.security.enrollment.enabled: "false"
 node.store.allow_mmap: "false" # disable nmap
 network.host: 0.0.0.0
 
