@@ -1,0 +1,4 @@
+## Custom JVM options for Railway compatibility
+
+# Disable container support to avoid cgroup v2 detection issues
+-XX:-UseContainerSupport

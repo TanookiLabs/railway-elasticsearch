@@ -23,8 +23,5 @@ RUN apt-get update && apt-get install -y sudo && \
 # Switch back to the elasticsearch user as elasticsearch can only run as non-root
 USER 1000:0
 
-# Disable Java container support early in the JVM startup to avoid cgroup detection issues
-ENV JAVA_TOOL_OPTIONS="-XX:-UseContainerSupport"
-
 # Run our new entrypoint
 ENTRYPOINT ["/usr/local/bin/entrypoint-new.sh"]
